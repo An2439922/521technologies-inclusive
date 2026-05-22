@@ -228,6 +228,27 @@ html.a11y-mode .btn-a11y svg {
     flex: 1;
 }
 
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    background: rgba(74, 124, 89, 0.1);
+    border: 1px solid rgba(74, 124, 89, 0.2);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hero-badge a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
 .hero-content h1 {
     font-size: 4.5rem;
     margin-bottom: 1rem;
@@ -264,6 +285,16 @@ html.a11y-mode .hero-image {
     transform: none;
     box-shadow: none;
     border: 3px solid #000;
+}
+
+html.a11y-mode .hero-badge {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+html.a11y-mode .hero-badge a {
+    color: #000;
 }
 
 /* Buttons */
