@@ -832,9 +832,19 @@ html.a11y-mode .footer-links a {
         text-align: center;
     }
 
+    .hero-badge {
+        font-size: 0.7rem; /* Reduced font size for mobile layout */
+        padding: 6px 12px;
+        display: inline-block; /* Inline-block container that wraps cleanly */
+        max-width: 100%;
+        line-height: 1.4;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+
     .hero-content h1 {
-        font-size: clamp(2rem, 8vw, 2.8rem) !important;
-        line-height: 1.15;
+        font-size: clamp(2.4rem, 10vw, 3.5rem) !important; /* Made significantly larger for mobile version */
+        line-height: 1.1;
     }
     
     .hero-content p {
