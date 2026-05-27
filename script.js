@@ -1,3 +1,20 @@
+// Force scroll to top on first tab open (first session visit),
+// but let the browser naturally restore scroll position on page refresh.
+if (!sessionStorage.getItem('visited_session')) {
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+    });
+    sessionStorage.setItem('visited_session', 'true');
+} else {
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'auto';
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const a11yToggle = document.getElementById('a11y-toggle');
     const htmlEl = document.documentElement;

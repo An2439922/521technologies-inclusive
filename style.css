@@ -819,7 +819,7 @@ html.a11y-mode .footer-links a {
     }
 
     section {
-        scroll-margin-top: 145px; /* Larger offset to account for wrapped column header on mobile */
+        scroll-margin-top: 220px; /* Safe large offset covering tallest wrapped sticky header on mobile */
     }
 
     .header-inner {
