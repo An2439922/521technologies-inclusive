@@ -867,10 +867,18 @@ html.a11y-mode .footer-links a {
 
     .hero-buttons {
         display: flex;
-        flex-direction: column; /* Stack vertically on mobile to fit nicely within viewport */
-        gap: 0.8rem;
+        flex-direction: row !important; /* Force side-by-side layout on mobile */
+        gap: 0.5rem; /* Tighten gap to give buttons maximum horizontal space */
         width: 100%;
-        margin-top: 0.5rem;
+        margin-top: 0.8rem;
+    }
+
+    .hero-buttons .btn {
+        flex: 1; /* Make both buttons take equal width */
+        width: auto !important; /* Override the full-width mobile button rule */
+        padding: 0.8rem 0.4rem; /* Compact padding for touch-screen targets */
+        font-size: 0.76rem; /* Compact font size to ensure 'Сотрудничество' fits neatly in a single line */
+        letter-spacing: 0.02em;
     }
     
     .about-text h2, .section-title, .contact-info h2 {
