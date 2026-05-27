@@ -168,7 +168,7 @@ html.a11y-mode .logo {
 .nav ul {
     list-style: none;
     display: flex;
-    gap: var(--spacing-md);
+    gap: 1.5rem; /* Reduced from 3rem (spacing-md) for better harmony with 5 items */
 }
 
 .nav li {
@@ -181,6 +181,7 @@ html.a11y-mode .logo {
     padding: 0.4rem 0;
     display: inline-block;
     position: relative;
+    font-size: 0.95rem; /* Reduced from base size for cleaner header styling */
 }
 
 .nav a::after {
@@ -825,12 +826,12 @@ html.a11y-mode .footer-links a {
     .nav ul {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 0.5rem 1rem;
+        gap: 0.3rem 0.6rem; /* Tighter menu gap on mobile */
     }
 
     .nav a {
-        padding: 0.6rem 0.8rem; /* Make menu links touch-friendly (44px vertical target) */
-        font-size: 0.95rem;
+        padding: 0.5rem 0.6rem; /* Touch-friendly but compact vertical/horizontal target */
+        font-size: 0.85rem; /* Reduced size for clean horizontal flow on mobile */
     }
     
     .hero-inner, .about-inner, .contact-inner {
