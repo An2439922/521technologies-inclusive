@@ -383,6 +383,7 @@ html.a11y-mode .hero-badge a {
 /* Sections General */
 section {
     padding: var(--spacing-lg) 0;
+    scroll-margin-top: 100px; /* Offset to prevent sticky header overlap on desktop */
 }
 
 .section-title {
@@ -815,6 +816,10 @@ html.a11y-mode .footer-links a {
     :root {
         --spacing-md: 2rem;
         --spacing-lg: 3rem;
+    }
+
+    section {
+        scroll-margin-top: 145px; /* Larger offset to account for wrapped column header on mobile */
     }
 
     .header-inner {
