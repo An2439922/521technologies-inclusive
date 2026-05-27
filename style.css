@@ -331,6 +331,12 @@ html.a11y-mode .hero-badge a {
     color: #000;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -856,6 +862,14 @@ html.a11y-mode .footer-links a {
         transform: none !important; /* Avoid horizontal scrollbar on mobile */
         max-width: 100%;
         margin-top: 1rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column; /* Stack vertically on mobile to fit nicely within viewport */
+        gap: 0.8rem;
+        width: 100%;
+        margin-top: 0.5rem;
     }
     
     .about-text h2, .section-title, .contact-info h2 {
